@@ -1,0 +1,30 @@
+version: "2.0"
+rules:
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+- rule: Say welcome anytime the user says thanks
+  steps:
+  - intent: thank_you
+  - action: utter_welcome
+- rule: Show another picture 
+  steps:
+  - intent: change_picture
+  - action: utter_change_picture 
+- rule: Show a picture of a puppy
+  steps:
+  - intent: puppy_change
+  - action: utter_puppy
+- rule: Show a picture of butterflies
+  steps:
+  - intent: butterflies_change
+  - action: utter_butterflies
+- rule: Show a picture of a panda
+  steps:
+  - intent: panda_change
+  - action: utter_panda
