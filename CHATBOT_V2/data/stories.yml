@@ -1,0 +1,80 @@
+version: "2.0"
+stories:
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+- story: Story from Conversation ID 81f2d478c5644be3b5611d37c271103e
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: deny
+  - action: utter_goodbye
+- story: Story from Conversation ID 7dd8005c3c0f4abb8a5ca4de2b2b8a7a
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: affirm
+  - action: utter_happy
+- story: Story from Conversation ID 3914731d5dda4d149bc579c6a3be6082
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: deny
+  - action: utter_goodbye
+- story: Story from Conversation ID 3cfc140c307d465d9d3171b1f960bb8c
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  - intent: deny
+  - action: utter_goodbye
+- story: Story from Conversation ID 2fecbac2f0b04d1e94e84ef3a430e535
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  - intent: deny
+  - action: utter_goodbye
+  - intent: goodbye
+  - action: utter_goodbye
+- story: Story from Conversation ID 5fe898e8b6f644dd93acb6631b8c4a22
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: thank_you
+  - action: utter_welcome
+  - intent: goodbye
+  - action: utter_goodbye
+  
